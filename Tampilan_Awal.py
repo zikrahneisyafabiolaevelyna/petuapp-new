@@ -59,6 +59,7 @@ class PETUapp(App):
         )
         judul.bind(size=judul.setter("text_size"))
 
+
         image1 = Image(
             source="bg_awal.png",
             size_hint_x=1,
@@ -76,11 +77,22 @@ class PETUapp(App):
             allow_stretch=True,
             keep_ratio=True
         )
+
+        labelby = Label(text= "by : Sains Data Universitas Negeri Surabaya 2025",
+                        font_name = "SantaNortPole.otf",
+                        color=(1, 0.41, 0.71, 1),
+                        size_hint=(None, None),
+                        size=(dp(120), dp(50)),
+                        pos_hint={"right": 0.9, "y": 0}
+                        )
+                        
+        
         tombol_play.bind(on_press=self.ganti_ke_menu)
 
         layout.add_widget(judul)
         layout.add_widget(image1)
         layout.add_widget(tombol_play)
+        layout.add_widget(labelby)
 
         awal.add_widget(layout)
 

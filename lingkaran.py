@@ -59,7 +59,7 @@ class LingkaranScreen(Screen):
 
         # RUMUS 
         layout.add_widget(Label(
-            text="Rumus: 3.14 × r × r",
+            text="Rumus: phi × r × r",
             font_name="Blustrue.otf",
             font_size=sp(15),
             color=(0, 0, 0, 1),
