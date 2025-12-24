@@ -22,7 +22,7 @@ class SegitigaScreen(Screen):
         # BACKGROUND
         with root.canvas.before:
             self.bg = Rectangle(
-                source="bg segitiga.png",
+                source="bg_segitiga.jpg",
                 pos=root.pos,
                 size=root.size
             )
